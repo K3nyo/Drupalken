@@ -1,0 +1,19 @@
+uuid: 23d6f39e-a0b8-4235-a12b-ab89ce9a21c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_me
+    - field.storage.contact_message.field_last_name
+id: contact_message.contact_me.field_last_name
+field_name: field_last_name
+entity_type: contact_message
+bundle: contact_me
+label: 'Last Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

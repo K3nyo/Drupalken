@@ -1,0 +1,29 @@
+uuid: 509516a2-3727-4228-a2bf-8260320519bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_banner
+    - field.storage.block_content.field_homepage_image
+    - media.type.image
+id: block_content.homepage_banner.field_homepage_image
+field_name: field_homepage_image
+entity_type: block_content
+bundle: homepage_banner
+label: 'Homepage Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

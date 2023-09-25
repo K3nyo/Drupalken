@@ -1,0 +1,12 @@
+uuid: d3710822-b60a-4943-8886-9d8d485d17fc
+langcode: en
+status: true
+dependencies: {  }
+id: contact_me
+label: 'Contact Me'
+recipients:
+  - test@example.com
+reply: ''
+weight: 0
+message: 'Successfully sent a contact message to Ken!'
+redirect: ''

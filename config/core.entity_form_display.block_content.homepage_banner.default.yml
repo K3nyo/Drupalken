@@ -1,0 +1,70 @@
+uuid: 01cc6cae-510d-4a7f-b4fd-a9c6af7d78f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_banner
+    - field.field.block_content.homepage_banner.field_bio_image
+    - field.field.block_content.homepage_banner.field_homepage_body
+    - field.field.block_content.homepage_banner.field_homepage_button
+    - field.field.block_content.homepage_banner.field_homepage_image
+    - field.field.block_content.homepage_banner.field_homepage_title
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - media_library
+    - text
+id: block_content.homepage_banner.default
+targetEntityType: block_content
+bundle: homepage_banner
+mode: default
+content:
+  field_bio_image:
+    type: image_image
+    weight: 31
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_homepage_body:
+    type: text_textarea
+    weight: 28
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_homepage_button:
+    type: link_default
+    weight: 32
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_homepage_image:
+    type: media_library_widget
+    weight: 30
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_homepage_title:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

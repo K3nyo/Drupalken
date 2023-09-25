@@ -1,0 +1,21 @@
+uuid: 4b0f3b1c-77be-4cbf-94dd-4d2c18ff4c5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_homepage_title
+field_name: field_homepage_title
+entity_type: block_content
+type: string
+settings:
+  max_length: 125
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

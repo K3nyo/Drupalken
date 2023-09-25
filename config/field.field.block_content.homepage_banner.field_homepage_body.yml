@@ -1,0 +1,22 @@
+uuid: a2aebc0a-0cd7-4a22-91dd-6a16b007f579
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_banner
+    - field.storage.block_content.field_homepage_body
+  module:
+    - text
+id: block_content.homepage_banner.field_homepage_body
+field_name: field_homepage_body
+entity_type: block_content
+bundle: homepage_banner
+label: 'Homepage Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

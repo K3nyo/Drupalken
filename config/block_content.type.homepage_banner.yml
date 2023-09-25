@@ -1,0 +1,8 @@
+uuid: d443c51f-7a26-429e-b7b8-fc31365b6e76
+langcode: en
+status: true
+dependencies: {  }
+id: homepage_banner
+label: 'Homepage Banner'
+revision: 0
+description: ''

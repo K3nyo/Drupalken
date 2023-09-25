@@ -1,0 +1,38 @@
+uuid: 94da403f-eb84-493f-932f-a3fc4c9a8e6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_me
+    - field.field.contact_message.contact_me.field_first_name
+    - field.field.contact_message.contact_me.field_last_name
+id: contact_message.contact_me.default
+targetEntityType: contact_message
+bundle: contact_me
+mode: default
+content:
+  field_first_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_last_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  message:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

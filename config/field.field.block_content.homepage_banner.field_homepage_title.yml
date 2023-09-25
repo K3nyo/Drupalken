@@ -1,0 +1,19 @@
+uuid: 751d5c28-4fe6-4478-9333-4285bc3f5e88
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.homepage_banner
+    - field.storage.block_content.field_homepage_title
+id: block_content.homepage_banner.field_homepage_title
+field_name: field_homepage_title
+entity_type: block_content
+bundle: homepage_banner
+label: 'Homepage Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
