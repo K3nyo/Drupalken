@@ -1,0 +1,151 @@
+uuid: 0bb93601-dbb9-4ec8-afba-684953137a20
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta
+    - field.field.block_content.cta.field_cta_background_image
+    - field.field.block_content.cta.field_cta_body
+    - field.field.block_content.cta.field_cta_button
+    - field.field.block_content.cta.field_cta_title
+    - field.field.block_content.cta.layout_builder__layout
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          f76d87e9-f49c-4108-a81b-caf8853b6a33:
+            uuid: f76d87e9-f49c-4108-a81b-caf8853b6a33
+            region: first
+            configuration:
+              id: 'field_block:block_content:cta:field_cta_background_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          34deb636-6aa4-47bf-bd2d-0e82239b0e94:
+            uuid: 34deb636-6aa4-47bf-bd2d-0e82239b0e94
+            region: second
+            configuration:
+              id: 'field_block:block_content:cta:field_cta_title'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          23470780-5caf-4045-8d97-561fc2c1d14a:
+            uuid: 23470780-5caf-4045-8d97-561fc2c1d14a
+            region: second
+            configuration:
+              id: 'field_block:block_content:cta:field_cta_body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          baea7948-3a46-4960-bde2-6dff554b54e5:
+            uuid: baea7948-3a46-4960-bde2-6dff554b54e5
+            region: second
+            configuration:
+              id: 'field_block:block_content:cta:field_cta_button'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components: {  }
+        third_party_settings: {  }
+id: block_content.cta.default
+targetEntityType: block_content
+bundle: cta
+mode: default
+content:
+  field_cta_background_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_cta_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_cta_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_cta_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  layout_builder__layout: true

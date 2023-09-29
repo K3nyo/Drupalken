@@ -1,0 +1,8 @@
+uuid: f1f078d1-c8d5-4a94-9e2a-e778c14cb345
+langcode: en
+status: true
+dependencies: {  }
+id: basic-page
+label: 'Basic Page'
+description: ''
+locked: false

@@ -1,0 +1,25 @@
+uuid: edeb63c7-088a-4353-b0e8-89a8ce2ac0c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-links
+  module:
+    - system
+  theme:
+    - bootstrap5
+id: bootstrap5_sociallinks
+theme: bootstrap5
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:social-links'
+settings:
+  id: 'system_menu_block:social-links'
+  label: 'Social Links'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

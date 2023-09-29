@@ -9,11 +9,13 @@ dependencies:
     - field.field.block_content.homepage_banner.field_homepage_button
     - field.field.block_content.homepage_banner.field_homepage_image
     - field.field.block_content.homepage_banner.field_homepage_title
+    - image.style.media_library
     - image.style.medium
   module:
     - image
     - layout_builder
     - link
+    - media
     - text
 third_party_settings:
   layout_builder:
@@ -55,11 +57,13 @@ content:
     weight: 4
     region: content
   field_homepage_image:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_link: ''
+      image_style: media_library
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 3
     region: content
