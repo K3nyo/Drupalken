@@ -1,0 +1,19 @@
+uuid: 6285a921-0887-4e6e-9bf2-f7a2e15c0a51
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_card_body
+field_name: field_card_body
+entity_type: paragraph
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

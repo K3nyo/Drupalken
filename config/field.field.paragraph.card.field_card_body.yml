@@ -1,0 +1,24 @@
+uuid: c4032efb-7585-452a-ad6b-f7d604e12691
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_body
+    - paragraphs.paragraphs_type.card
+  module:
+    - text
+id: paragraph.card.field_card_body
+field_name: field_card_body
+entity_type: paragraph
+bundle: card
+label: 'Card Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary
