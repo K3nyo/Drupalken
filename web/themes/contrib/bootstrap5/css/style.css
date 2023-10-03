@@ -261,6 +261,7 @@
 footer .region-footerfooter {
   display: flex;
   flex-direction: row;
+  color: #fff;
 }
 
   .layout--twocol-section.layout--twocol-section--25-75 > .layout__region--first,
