@@ -2,6 +2,12 @@ uuid: 80680b8c-e2c2-4f4f-915e-049cd2f59ceb
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.article
+    - node.type.blogs
+    - node.type.event
+    - node.type.landing_page
+    - node.type.page
   module:
     - content_moderation
 _core:
@@ -11,11 +17,6 @@ label: Editorial
 type: content_moderation
 type_settings:
   states:
-    archived:
-      label: Archived
-      weight: 5
-      published: false
-      default_revision: true
     draft:
       label: Draft
       weight: -5
@@ -26,25 +27,12 @@ type_settings:
       weight: 0
       published: true
       default_revision: true
+    reviewing:
+      label: Reviewing
+      weight: 1
+      published: false
+      default_revision: false
   transitions:
-    archive:
-      label: Archive
-      from:
-        - published
-      to: archived
-      weight: 2
-    archived_draft:
-      label: 'Restore to Draft'
-      from:
-        - archived
-      to: draft
-      weight: 3
-    archived_published:
-      label: Restore
-      from:
-        - archived
-      to: published
-      weight: 4
     create_new_draft:
       label: 'Create New Draft'
       from:
@@ -59,5 +47,30 @@ type_settings:
         - published
       to: published
       weight: 1
-  entity_types: {  }
+    to_draft:
+      label: 'To Draft'
+      from:
+        - reviewing
+      to: draft
+      weight: 2
+    to_publish:
+      label: 'To Publish'
+      from:
+        - reviewing
+      to: published
+      weight: 3
+    to_review:
+      label: 'To Review'
+      from:
+        - draft
+        - published
+      to: reviewing
+      weight: 4
+  entity_types:
+    node:
+      - article
+      - blogs
+      - event
+      - landing_page
+      - page
   default_moderation_state: draft
