@@ -34,27 +34,30 @@ third_party_settings:
           context_mapping: {  }
           column_widths: 50-50
         components:
-          112af85d-0d60-4d88-bb28-ed4add02422d:
-            uuid: 112af85d-0d60-4d88-bb28-ed4add02422d
+          bb58848d-7372-474c-b150-d18a54a9aa4b:
+            uuid: bb58848d-7372-474c-b150-d18a54a9aa4b
             region: second
             configuration:
               id: 'field_block:node:event:field_event_image'
+              label: 'Event Image'
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
                 type: image
                 label: hidden
                 settings:
                   image_link: ''
-                  image_style: ''
+                  image_style: large
                   image_loading:
                     attribute: lazy
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          a69dd3a2-8d48-43d7-9295-bbfa41dea787:
-            uuid: a69dd3a2-8d48-43d7-9295-bbfa41dea787
+          6e71d178-eafa-4774-a85c-e57ddebca809:
+            uuid: 6e71d178-eafa-4774-a85c-e57ddebca809
             region: first
             configuration:
               id: 'field_block:node:event:field_end_date'
@@ -70,8 +73,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 1
             additional: {  }
-          5f0c15ed-c036-4f56-a352-c9f064a4002f:
-            uuid: 5f0c15ed-c036-4f56-a352-c9f064a4002f
+          d2cb26d0-a35a-4479-a2c1-637a80b99c70:
+            uuid: d2cb26d0-a35a-4479-a2c1-637a80b99c70
             region: first
             configuration:
               id: 'field_block:node:event:field_start_date'
@@ -87,8 +90,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          afe63e36-8d22-48f7-b66a-33ac638a68fa:
-            uuid: afe63e36-8d22-48f7-b66a-33ac638a68fa
+          304b73a2-649a-4f72-b1b6-ad4124440849:
+            uuid: 304b73a2-649a-4f72-b1b6-ad4124440849
             region: first
             configuration:
               id: 'field_block:node:event:body'
@@ -102,8 +105,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
-          76af95ce-ae86-40ab-8f2a-968a073d78bc:
-            uuid: 76af95ce-ae86-40ab-8f2a-968a073d78bc
+          943c232d-311d-41ee-b0eb-b3e88076e307:
+            uuid: 943c232d-311d-41ee-b0eb-b3e88076e307
             region: second
             configuration:
               id: 'extra_field_block:node:event:links'
@@ -111,6 +114,16 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
             weight: 1
+            additional: {  }
+          947f460d-f4fa-45f1-b2e1-ea39bc5b891b:
+            uuid: 947f460d-f4fa-45f1-b2e1-ea39bc5b891b
+            region: second
+            configuration:
+              id: 'extra_field_block:node:event:content_moderation_control'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 2
             additional: {  }
         third_party_settings: {  }
 id: node.event.default
@@ -124,6 +137,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
     region: content
   field_end_date:
     type: datetime_default

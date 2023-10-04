@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_end_date
     - field.storage.node.field_start_date
     - node.type.event
+    - system.menu.main
   module:
     - datetime
     - fullcalendar_view
@@ -337,6 +338,15 @@ display:
     display_options:
       display_extenders: {  }
       path: events
+      menu:
+        type: normal
+        title: Event
+        description: ''
+        weight: -49
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
