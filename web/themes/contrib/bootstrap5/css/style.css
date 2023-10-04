@@ -271,6 +271,12 @@ footer .region-footerfooter {
     padding-bottom: 10px;
   }
 
+  .layout--twocol-section.layout--twocol-section--50-50 > .layout__region--first,
+  .layout--twocol-section.layout--twocol-section--50-50 > .layout__region--second {
+    flex: 0 1 50%;
+    padding: 10px;
+  }
+
 *,
 *::before,
 *::after {
