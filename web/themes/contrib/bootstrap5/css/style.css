@@ -277,6 +277,10 @@ footer .region-footerfooter {
     padding: 10px;
   }
 
+.nav-item-ken a {
+  color: #ffffff;
+}
+
 *,
 *::before,
 *::after {
